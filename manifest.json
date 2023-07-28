@@ -1,0 +1,16 @@
+{
+  "name": "Vinted_Extention_Sellnow",
+  "description": "An example chrome extension that injects buttons using jQuery",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js","script.js"]
+    }
+  ],
+  "manifest_version": 3,
+  "icons":{
+    "128":"128.png"
+  }
+}
